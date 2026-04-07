@@ -10,7 +10,7 @@ h1 {
     color: white;
 }
 
-#calendar {
+#calender {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
