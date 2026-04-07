@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    text-align: center;
+}
+
+h1 {
+    padding: 20px;
+    color: white;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.month {
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.month:hover {
+    transform: scale(1.03);
+}
+
+.month h2 {
+    background: #4A90E2;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.day-name {
+    font-weight: bold;
+    background: #eee;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.date {
+    padding: 8px;
+    border-radius: 5px;
+    background: #f9f9f9;
+    transition: 0.2s;
+}
+
+.date:hover {
+    background: #4A90E2;
+    color: white;
+    cursor: pointer;
+}
